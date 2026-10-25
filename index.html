@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Horizontal scroll effects</title>
+  </head>
+  <body>
+    <nav>
+      <div id="left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+          />
+        </svg>
+
+        <div>Smart Navigation</div>
+      </div>
+
+      <div id="right">
+        <ul>
+          <li>Blog</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Services</li>
+        </ul>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </div>
+    </nav>
+
+    <div id="menubar">
+      <ul>
+          <li>About Us</li>
+          <li>Contacts</li>
+          <li>Vacancies</li>
+          <li>Live Demos</li>
+          <li>Services</li>
+          <li>Blogs</li>
+          <li>Company</li>
+      </ul>
+    </div>
+
+    <div id="page1">
+      <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, quibusdam.</h1
+      >
+    </div>
+
+    <div id="page2">
+      <small
+        >Maximizes available screen space while scrolling down and provides
+        quick access to navigation links when scrolling up.</small
+      >
+    </div>
+    <div id="page3">
+      <small>
+        Dynamically adjusts the navbar's visibility based on the user's scroll
+        direction, ensuring consistent behavior throughout the webpage.</small
+      >
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"
+      integrity="sha512-oJ8QbaQThQoJZ7oEv+29jfPM6CcP+zUxh3PKJs1vyOhx0UraUrE7PQgeItu3dOuCJyrzWpoYMsVjkkPEBzbUqw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js"
+      integrity="sha512-OaIE7ud4P04EhnBuhEcm0wQSceIxbi2pV03oBLS/+F6ampfxsnxcIxOp7H2eF9G7N0kEht0VAzOLG+dTLSo17Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
