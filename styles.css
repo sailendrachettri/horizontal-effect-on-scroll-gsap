@@ -71,8 +71,20 @@ nav {
   text-align: center;
   background-color: antiquewhite;
   padding: 0 30px;
-  font-size: x-large;
+  font-size: 10rem;
   white-space: nowrap;
+}
+
+#page2{
+  display: flex;
+  gap: 0 60px;
+}
+
+#page2 img{
+  height: 450px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 #menubar {

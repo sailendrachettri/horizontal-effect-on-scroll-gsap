@@ -1,5 +1,48 @@
 // Horizontal effects
-let page1Heading = document.querySelector("#page1 h1");
+gsap.registerPlugin(ScrollTrigger);
+
+const heading = document.querySelector("#page1 h1");
+const page2Imgs = document.querySelector("#page2 #photos");
+
+const paddingRight = 150;
+
+function getScrollDistance(element) {
+  return Math.max(
+    0,
+    element.scrollWidth - window.innerWidth + paddingRight
+  );
+}
+
+// Page 1: Horizontal heading scroll
+gsap.to(heading, {
+  x: () => -getScrollDistance(heading),
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#page1",
+    start: "top top",
+    end: () => `+=${getScrollDistance(heading)}`,
+    scrub: 1,
+    pin: true,
+    markers: true,
+    invalidateOnRefresh: true,
+  },
+});
+
+// Page 2: Horizontal photos scroll
+gsap.to(page2Imgs, {
+  x: () => -getScrollDistance(page2Imgs),
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#page2",
+    start: "top top",
+    end: () => `+=${getScrollDistance(page2Imgs)}`,
+    scrub: 1,
+    pin: true,
+    markers: true,
+    invalidateOnRefresh: true,
+  },
+});
+
 
 
 
