@@ -25,7 +25,7 @@ gsap.to(heading, {
     end: () => `+=${getScrollDistance(heading)}`,
     scrub: 1,
     pin: true,
-    markers: true,
+    markers: false,
     invalidateOnRefresh: true,
   },
 });
@@ -40,7 +40,7 @@ gsap.to(page2Imgs, {
     end: () => `+=${getScrollDistance(page2Imgs)}`,
     scrub: 1,
     pin: true,
-    markers: true,
+    markers: false,
     invalidateOnRefresh: true,
   },
 });
@@ -55,7 +55,7 @@ gsap.from(page3Imgs, {
     end: () => `+=${getScrollDistance(page3Imgs)}`,
     scrub: 1,
     pin: true,
-    markers: true,
+    markers: false,
     invalidateOnRefresh: true,
   },
 });
@@ -70,7 +70,7 @@ gsap.to(page4Text, {
     end: () => `+=${getScrollDistance(page4Text)}`,
     scrub: 1,
     pin: true,
-    markers: true,
+    markers: false,
     invalidateOnRefresh: true,
   },
 });
