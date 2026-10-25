@@ -3,6 +3,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const heading = document.querySelector("#page1 h1");
 const page2Imgs = document.querySelector("#page2 #photos");
+const page3Imgs = document.querySelector("#page3 #photos");
+const page4Text = document.querySelector("#page4 small");
 
 const paddingRight = 150;
 
@@ -36,6 +38,36 @@ gsap.to(page2Imgs, {
     trigger: "#page2",
     start: "top top",
     end: () => `+=${getScrollDistance(page2Imgs)}`,
+    scrub: 1,
+    pin: true,
+    markers: true,
+    invalidateOnRefresh: true,
+  },
+});
+
+// Page 3: Horizontal photo scroll reverse
+gsap.from(page3Imgs, {
+  x: () => -getScrollDistance(page3Imgs),
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#page3",
+    start: "top top",
+    end: () => `+=${getScrollDistance(page3Imgs)}`,
+    scrub: 1,
+    pin: true,
+    markers: true,
+    invalidateOnRefresh: true,
+  },
+});
+
+// Page 4: Horizontal small headline scroll
+gsap.to(page4Text, {
+  x: () => -getScrollDistance(page4Text),
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#page4",
+    start: "top top",
+    end: () => `+=${getScrollDistance(page4Text)}`,
     scrub: 1,
     pin: true,
     markers: true,

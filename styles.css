@@ -61,7 +61,8 @@ nav {
 
 #page1,
 #page2,
-#page3 {
+#page3,
+#page4 {
   overflow-x: hidden;
   height: 100%;
   width: 100%;
@@ -69,18 +70,19 @@ nav {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  background-color: antiquewhite;
+  background-color: #0a0a0aee;
   padding: 0 30px;
   font-size: 10rem;
   white-space: nowrap;
+  color: white;
 }
 
-#page2{
+#page2, #page3{
   display: flex;
   gap: 0 60px;
 }
 
-#page2 img{
+#page2 img, #page3 img{
   height: 450px;
   width: 350px;
   object-fit: cover;
